@@ -1,0 +1,15 @@
+.announce-bar{
+    a{
+        margin: 1rem;
+        color: #434649;
+        &:hover{
+            color: #0084bf
+        }
+        p{
+            margin: 0 !important;
+            &:nth-child(2){
+                color: #434649;
+            }
+        }
+    }
+}

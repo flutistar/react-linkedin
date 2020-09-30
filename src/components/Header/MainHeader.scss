@@ -1,0 +1,105 @@
+nav{
+    padding: 0 !important
+}
+.navbar-brand{
+    cursor: pointer;
+    display: flex;
+    form {
+        position: relative;
+        background-color: #fff;
+        border-radius: 6px;
+        svg{
+            color: var(--cool-gray-80,#283e4a);
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 1px;
+            padding: 0;
+            border-radius: 0 2px 2px 0;
+            width: 28px;
+            height: 34px;
+            line-height: 34px;
+            margin: 0;
+            box-shadow: none;
+            pointer-events: none;
+        }
+        input{
+            border: none !important;
+            background: transparent;
+            box-shadow: none !important;
+            &:focus{
+                outline: none;
+            }
+            &:active{
+                outline: none;
+            }
+        }
+    }
+}
+.navbar{
+    background-color: var(--cool-gray-80,#283e4a);
+    color: #fff;
+}
+.navbar-light{
+    .navbar-brand{
+        color: #fff;
+    }
+    .navbar-nav{
+        .nav-link{
+            position: relative;
+            color: var(--cool-gray-30,#e1e9ee);
+            text-align: center;
+            min-width: 80px;
+            min-height: 30px;
+            
+            &.active{
+                color: #fff;
+                border-bottom: solid 2px;
+            }
+            &:hover{
+                color: #fff;
+            }
+            &:focus {
+                color: #fff;
+            }
+            &:active{
+                color: #fff;
+                
+            }
+            svg{
+                font-size: 20px;
+            }
+            .nav-link-text{
+                font-size: 12px;
+            }
+            
+        }
+        .nav-me {
+            padding-top: .5rem;
+            text-align: center;
+            &.divider{
+                border-left: 1px solid var(--cool-gray-70,#5c6f7c);
+            }
+            .nav-avatar{
+                cursor: pointer;
+                img{
+                    border: 1.5px solid;
+                    border-radius: 20px;
+                }
+                svg{
+                    font-size: 20px;
+                }
+            }
+            .dropdown{
+                padding: 0px;
+                a{
+                    max-height: 35px;
+                    padding: 0px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}  

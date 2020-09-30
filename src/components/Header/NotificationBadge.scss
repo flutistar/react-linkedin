@@ -1,0 +1,28 @@
+.notification-badge{
+    position: absolute;
+    background: red;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    border-radius: 0.8rem;
+    border: solid 2px #fff;
+    right: 19px;
+    top: 2px;
+    .no-count-badge{
+        height: 0.5rem;
+        width: 0.5rem;
+        background: #fff;
+        position: absolute;
+        right: 4px;
+        top: 3px;
+        border-radius: 4px;
+    }
+    .count-badge{
+        font-size: 13px;
+        color: #fff;
+        line-height: 1px;
+        position: absolute;
+        top: 6px;
+        right: 4px;
+        font-weight: 600;               
+    }
+}
