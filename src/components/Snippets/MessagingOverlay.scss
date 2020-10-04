@@ -1,0 +1,79 @@
+.messaging-overlay{
+    position: fixed;
+    right: 0;
+    bottom: -1px;
+    width: 288px;
+    border: 1px solid #9e9696;
+    border-radius: 2px;
+
+    &.expanded{
+        top: 145px;
+        transition-duration: 167ms;
+        animation: fade-in 167ms cubic-bezier(.4,0,1,1);
+    }
+    &.collapsed{
+        transform: translateY(100%) translateY(-48px);
+        transition-duration: 167ms;
+        animation: fade-in 167ms cubic-bezier(.4,0,1,1);
+    }
+    .header{
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 8px;
+        min-height: 48px;
+        position: relative;
+        background: var(--cool-gray-80,#283e4a);
+        border-bottom: 1px solid rgba(0,0,0,.15);
+        border-radius: 2px 2px 0 0;
+        cursor: pointer;
+        &:hover{
+            background: #131f25;
+        }
+        .avatar{
+            display: flex;
+            position: relative;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+            }
+            .status{
+                background-color: var(--system-green-60, #469a1f);
+                height: 13px;
+                width: 13px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border: 2px solid;
+                border-radius: 7px;
+            }
+        }
+        span{
+            margin-left: 11px;
+            font-size: 15px;
+            font-weight: 600;
+            flex: 1;
+        }
+        .action-group{
+            a{
+                color: #fff;
+                min-height: 32px;
+                min-width: 32px;
+                display: inline-flex;
+                align-items: center;
+                text-align: center;
+                padding-left: 8px;
+                margin-right: 6px;
+                transition-timing-function: cubic-bezier(.4,0,.2,1);
+                transition-duration: 167ms;
+                &:hover{
+                    color: #fff;
+                    background-color: hsla(0,0%,100%,.15);
+                    border-radius: 49.5%;
+                }
+            }
+        }
+    }
+}

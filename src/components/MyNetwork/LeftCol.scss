@@ -1,0 +1,35 @@
+.left-col{
+    border: 1px solid #9e9696;
+    border-radius: 2px;
+    &.sticky{
+        position: fixed;
+        top: 80px;
+        width: 14%;
+    }
+    .my-community{
+        .collapsed{
+            max-height: 0px !important;
+            transition-duration: 167ms;
+            animation: fade-in 167ms cubic-bezier(.4,0,1,1);
+            overflow: hidden;
+        }
+        .expanded{
+            transition-duration: 167ms;
+            animation: fade-in 167ms cubic-bezier(.4,0,1,1);
+        }
+        .collapse-btn{
+            text-decoration: none;  
+            color: rgba(0,0,0,.75);            
+            padding: 6px 12px;
+            margin-right: 8px;
+            &:hover{
+                background-color: hsla(0,0%,81.2%,.25);
+                color: rgba(0,0,0,.75);
+                cursor: pointer;
+            }
+            &.hide{
+                display: none;
+            }
+        }
+    }
+}

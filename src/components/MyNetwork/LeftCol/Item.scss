@@ -1,0 +1,25 @@
+.item{
+    padding: 8px 20px;
+    display: flex;
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+    cursor: pointer;
+    &:hover{
+        color: rgba(0,0,0,.75);
+        background-color: #f3f6f8;
+        text-decoration: none;
+
+    }
+    .icon{
+        width: 50px;
+    }
+    svg{
+        font-size: 22px;
+        margin-right: 14px;
+    }
+    span{
+        &:nth-child(2){
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.invitation{
+    border: 1px solid #9e9696;
+    border-radius: 2px;
+    .invitation-header{
+        border-bottom: 0.5px solid #bfbfbf;
+        padding: 8px 8px 8px 16px;
+        span{
+            font-size: 18px;
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;  
+            color: rgba(0,0,0,.75);            
+            padding: 6px 12px;
+            margin-right: 8px;
+            &:hover{
+                background-color: hsla(0,0%,81.2%,.25);
+                color: rgba(0,0,0,.75);
+                cursor: pointer;
+            }
+        }
+    }
+    .invitation-footer{
+        a{
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+            transition-duration: 167ms;
+            font-weight: bold;
+            padding: 8px 0;
+            cursor: pointer;
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            text-align: center;
+            color: #0073b1;
+            &:hover{
+                background-color: rgba(152,216,244,.25);
+                color: #006097;
+            }
+        }
+    }
+}
