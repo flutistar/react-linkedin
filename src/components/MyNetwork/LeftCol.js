@@ -39,14 +39,14 @@ export const LeftCol = (props) => {
         if(!toggleCommun){
             return (
                 <span>
-                    Show more
+                    Show more &nbsp;&nbsp;
                     <FontAwesomeIcon icon={ faChevronDown } />
                 </span>                
             );
         }
         return (
             <span>
-                Show less
+                Show less &nbsp;&nbsp;
                 <FontAwesomeIcon icon={ faChevronUp } />
             </span>            
         );

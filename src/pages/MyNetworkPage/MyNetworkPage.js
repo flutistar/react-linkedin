@@ -3,8 +3,8 @@ import React, { useReducer } from "react";
 // import { Activity } from "../../components/Activity";
 import { useHistory } from "react-router-dom";
 
-import { Invitation } from '../../components/MyNetwork/MainCol'
 import { LeftCol } from '../../components/MyNetwork'
+import { Invitation, Discover } from '../../components/MyNetwork/MainCol'
 
 import "./MyNetworkPage.scss";
 
@@ -21,6 +21,7 @@ export const MyNetworkPage = () => {
         </div>
         <div className="col-md-8">
           <Invitation />
+          <Discover />
         </div>
       </div>
     </div>

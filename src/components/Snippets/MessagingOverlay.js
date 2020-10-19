@@ -48,7 +48,6 @@ export const MessagingOverlay = (props) => {
         </div>
       </div>
       <div className="body">
-        body
       </div>
     </div>
   );
