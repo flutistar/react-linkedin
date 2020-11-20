@@ -1,0 +1,13 @@
+.header{
+    border-bottom: 1px solid var(--warm-gray-40,#cdcfd2);
+    a{
+        height: 40px;
+        width: 40px;
+        min-width: auto;
+        background-color: transparent;
+        color: #0073b1;
+        svg{
+            color: #0073b1;
+        }
+    }
+}

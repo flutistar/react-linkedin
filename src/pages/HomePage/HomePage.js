@@ -3,6 +3,8 @@ import React, { useReducer } from "react";
 // import { Activity } from "../../components/Activity";
 import { useHistory } from "react-router-dom";
 
+import { LeftCol } from '../../components/Home/Left/LeftCol'
+import { Feed } from '../../components/Home/Main/Feed'
 import "./HomePage.scss";
 
 export const HomePage = () => {
@@ -12,10 +14,14 @@ export const HomePage = () => {
   }
   return (
     <div className="container">
-      HomePage
-      <button type="button" onClick={handleClick}>
-        Notification
-      </button>
+      <div className="row">
+        <div className="col-md-3">
+          <LeftCol />
+        </div>
+        <div className="col-md-8">
+          <Feed />
+        </div>
+      </div>
     </div>
   );
 };

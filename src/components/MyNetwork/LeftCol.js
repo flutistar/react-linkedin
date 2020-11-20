@@ -32,7 +32,7 @@ export const LeftCol = (props) => {
             window.removeEventListener('scroll', handlePosition)
         };
     })
-    function toggleCommunity(){
+    const toggleCommunity = () => {
         setToggleCommun(!toggleCommun)
     }
     const ToggleIcon = () => {
@@ -53,7 +53,7 @@ export const LeftCol = (props) => {
     }
 
     return (
-        <div className={`left-col ${scrollY>60?'sticky':''}`}>
+        <div className={`left-col bg-white ${scrollY>60?'sticky':''}`}>
             <SnippetHeader headerLabel="Manage my network" />
             <div className="my-community">
                 <Item label="Connections" icon={faUserFriends} num="1287" />

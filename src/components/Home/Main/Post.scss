@@ -1,0 +1,47 @@
+.post{
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    background-color: #fff;
+    .post-header{
+        position: relative;
+        padding: 10px;
+        .avatar{
+            margin: 0 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .poster-detail{
+            .poster-name{
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .poster-title{
+                font-size: 14px;
+                color: rgba(0,0,0,.7);
+            }
+        }
+    }
+    .post-body{
+        .post-img{
+            text-align: center;
+            img{
+                max-width: 100%;
+                max-height: 800px;
+            }
+        }
+    }
+    .post-footer{
+        a{
+            svg{
+                margin-right: 10px;
+            }
+            font-weight: bold;
+            color: rgba(0,0,0,.5);
+            padding: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

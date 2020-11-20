@@ -4,13 +4,13 @@ import './Invitation.scss'
 
 import img1 from '../../../assets/images/1.png'
 import img2 from '../../../assets/images/2.png'
-import img3 from '../../../assets/images/3.png'
+import img3 from '../../../assets/images/9.png'
 
 import InvitationItem from './InvitationItem'
 
 export const Invitation = () => {
   return (
-    <div className="invitation">
+    <div className="invitation bg-white">
         <div className="invitation-header d-flex">
           <span>Invitations</span>
           <a >See all 22</a>

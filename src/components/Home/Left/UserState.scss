@@ -1,0 +1,49 @@
+.user-state{
+    border-radius: 10px;
+    background-color: #fff;
+    .user-detail{
+        text-align: center;
+        position: relative;
+        .bg-img{
+            height: 62px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-repeat: repeat;
+            width: 100%;
+            object-fit: cover;
+        }
+        .user-avatar{
+            position: relative;
+            text-align: center;
+            padding-top: 25px;
+            img{
+                border-radius: 50%;
+                border: 2px solid #fff;
+            }
+        }
+        .user-full-name{
+            p{
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .user-title{
+            p{
+                font-size: 15px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+    .state{
+        .grey-7{
+            color: rgba(0, 0, 0, 0.7)
+        }
+        a{
+            color: #0073b1;
+        }
+    }
+}
+.line{
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}

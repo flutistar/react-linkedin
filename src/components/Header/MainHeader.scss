@@ -4,37 +4,38 @@ nav{
 .navbar-brand{
     cursor: pointer;
     display: flex;
-    form {
-        position: relative;
-        background-color: #fff;
-        border-radius: 6px;
-        svg{
-            color: var(--cool-gray-80,#283e4a);
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 1px;
-            padding: 0;
-            border-radius: 0 2px 2px 0;
-            width: 28px;
-            height: 34px;
-            line-height: 34px;
-            margin: 0;
-            box-shadow: none;
-            pointer-events: none;
+    
+}
+.search-form {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    svg{
+        color: var(--cool-gray-80,#283e4a);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 1px;
+        padding: 0;
+        border-radius: 0 2px 2px 0;
+        width: 28px;
+        height: 34px;
+        line-height: 34px;
+        margin: 0;
+        box-shadow: none;
+        pointer-events: none;
+    }
+    input{
+        border: none !important;
+        background: transparent;
+        box-shadow: none !important;
+        &:focus{
+            outline: none;
         }
-        input{
-            border: none !important;
-            background: transparent;
-            box-shadow: none !important;
-            &:focus{
-                outline: none;
-            }
-            &:active{
-                outline: none;
-            }
+        &:active{
+            outline: none;
         }
     }
 }
